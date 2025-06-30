@@ -34,5 +34,5 @@ app.use("/api/chat", chatRoutes);
 //   connectDB();
 // });
 
-export const handler = serverless(app);
+export default serverless(app);
 
