@@ -33,6 +33,13 @@ app.use("/api/chat", chatRoutes);
 //   console.log(`Server is running on port ${PORT}`);
 //   connectDB();
 // });
+app.get("/", (req, res) => {
+  res.json({
+    message: " Backend deployed on Vercel & working",
+    note: "serverless deployment is fine!"
+  });
+});
+
 
 export default serverless(app);
 
